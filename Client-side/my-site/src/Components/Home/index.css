@@ -1,0 +1,74 @@
+
+
+.Home{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "eurostile", sans-serif;
+}
+.titleBox{
+  margin-top: 5%;
+}
+.title{
+  font-weight: 800 !important;
+  color: black;
+  text-align: center;
+}
+.subtitle{
+  text-align: center;
+}
+.deskImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+.section.is-primary {
+    background-color: #7510F7;
+    color: #fff;
+}
+h3 {
+  color: #fff !important;
+  font-weight: 400 !important;
+}
+p{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+.skills{
+  background: linear-gradient(180deg, #7510F7 50%, #ffffff 50%);
+}
+.container{
+  margin-bottom: 0px;
+}
+.skill{
+  margin-left: 22%;
+  margin-right: 22%;
+}
+.box {
+    border-radius: 12px;
+}
+.columns{
+  display: flex;
+  flex-direction: row;
+}
+.column{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.left{
+  border-right: 1px solid #E6ECF8;
+}
+
+.skillogo{
+  height: 55px;
+  width: 55px;
+  margin: 25px;
+}
+
+@media screen and (max-width: 816px){
+.columns{
+    flex-direction: column;
+}
+}

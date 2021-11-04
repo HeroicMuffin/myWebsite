@@ -1,15 +1,17 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
 
 .navItems{
     width: 100%;
-    margin-right: 150px;
+
 }
 .navItem1{
-   padding: 40px;
+   padding: 30px;
     float: right;
 
 }
 .navItem2{
-    margin-top: 40px;
+    margin-top: 30px;
     float: right;
 
 }
@@ -19,12 +21,23 @@ a{
 }
 
 .navbar{
-    background-color: black;
     width: 100%;
-    position:fixed;
+    height: 150px;
     display: flex;
     justify-content: space-between;
 }
 .logo{
     padding: 20px;
+
+}
+.button.is-primary.is-outlined{
+    background-color: transparent;
+    border-color: #7510F7;
+    color: #7510F7;
+}
+
+.button.is-primary.is-outlined:hover{
+    background-color: #7510F7;
+    border-color: transparent;
+    color: white;
 }
