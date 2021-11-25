@@ -2,6 +2,9 @@ import React from "react";
 import deskImg from "../../Images/hero.svg"
 import frontend from "../../Images/icons8-html-64.png"
 import backend from "../../Images/backend.png"
+import linkedin from "../../Images/linkedin.png"
+import linkedinHover from "../../Images/linkedin-hover.png"
+import github from "../../Images/icons8-github.svg"
 import "./index.css";
 
 
@@ -36,16 +39,34 @@ function Home() {
                                     <img className="skillogo" src={frontend}/>
                                     <h1 className="title is-spaced is-size-4">Front-end</h1>
                                     <p>I enjoy working with frameworks and bringing ideas to life on a browser </p>
+                                    <h4 className="cardMiniHeader">Languages & Frameworks:</h4>
+                                    <p>Javascript</p>
+                                    <p>Typescript</p>
+                                    <p>React</p>
+                                    <p>Angular</p>
+                                    <p>HTML</p>
+                                    <p>CSS</p>
                                 </div>
                                 <div className="column">
                                     <img className="skillogo" src={backend}/>
                                     <h1 className="title is-spaced is-size-4">Back-end</h1>
                                     <p>I like to write code from scratch and solve problems in creative ways</p>
+                                    <h4 className="cardMiniHeader">Dev tools:</h4>
+                                    <p>NodeJs</p>
+                                    <p>MongoDB</p>
+                                    <p>MySQL</p>
+                                    <p>Docker</p>
+                                    <p>Git</p>
+                                    <p>Terminal</p>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section className="links has-text-centered">
+                <div>
+                    <a href="https://www.linkedin.com/in/peleg-ohanuna-465a00213/" target="_blank"><img className="linkedInLogo" src={linkedin} onMouseOver={e => (e.currentTarget.src = linkedinHover)} onMouseOut={e => (e.currentTarget.src = linkedin)}/></a>
                 </div>
             </section>
         </div>

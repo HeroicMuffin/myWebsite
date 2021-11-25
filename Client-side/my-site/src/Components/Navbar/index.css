@@ -25,6 +25,8 @@ a{
     height: 150px;
     display: flex;
     justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 120px;
 }
 .logo{
     padding: 20px;
