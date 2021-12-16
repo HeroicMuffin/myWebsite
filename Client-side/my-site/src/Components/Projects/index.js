@@ -1,13 +1,16 @@
 import React from "react";
 import "./index.css";
 
+import {DemoCarousel} from "./Carousel/Carousel"
 
 function Projects() {
 
 
     return (
-        <div class="Projects">
-            <h1>Projects</h1>
+        <div class="projectsContainer">
+            <div className="carouselContainer">
+                <DemoCarousel/>
+            </div>
         </div>
     );
 }

@@ -1,0 +1,12 @@
+.projectsContainer{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, #7510F7 50%, #ffffff 50%);
+}
+
+.carouselContainer{
+    margin-top: 50px;
+    background-color: #ffffff;
+    width: 60%;
+    border-radius: 12px;
+}
