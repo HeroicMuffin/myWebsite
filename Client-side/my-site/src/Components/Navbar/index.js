@@ -2,14 +2,14 @@ import React from "react";
 import "./index.css";
 import logo from "../../Images/sig.png"
 import {BrowserRouter as Router, Switch, Route,Link} from 'react-router-dom'
-import routes from "../AppRouter/router.config"
-import AppRoutes from "../AppRouter/appRouter";
+
 
 function Navbar() {
 
 
     return (
-        <div className="navbar">
+        <div>
+            <div className="navbar">
             <div>
                 <Link to={"/"}>
                     <img className="logo" src={logo} alt="https://fontmeme.com/permalink/211028/e7291e4a6aea91f7d68554659dbe5bc3.png"/>
@@ -29,9 +29,8 @@ function Navbar() {
                     </Link>
                 </div>
             </div>
-             
         </div>
-        
+    </div>
     );
 }
 

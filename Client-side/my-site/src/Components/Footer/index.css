@@ -1,0 +1,45 @@
+.Footer{
+    padding-top: 180px;
+}
+
+.links{
+  display: flex;
+  flex-direction:column;
+  justify-content: end;
+  background-color: #7510F7;
+  height: 300px;
+  width: 100%; 
+}
+
+.linksContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.linkBox{
+  margin: 14px;
+}
+
+
+.linkedInLogo{
+  border: 2.5px solid #934ad8;
+  height: 50px;
+  border-radius: 50%;
+}
+.linkedInLogo:hover{
+  border: none;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.gitHubLogo{
+  border: 2.5px solid #934ad8;
+  height: 50px;
+  border-radius: 50%;
+}
+.gitHubLogo:hover{
+  border: none;
+  height: 50px;
+  border-radius: 50%;
+}
