@@ -1,103 +1,94 @@
-.Home{
+.Home {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: "eurostile", sans-serif;
+  background-color: #fff;
 }
-.titleBox{
+.titleBox {
   margin-top: 5%;
 }
-.title{
+.title {
   font-weight: 800;
   color: black;
   text-align: center;
 }
-.subtitle{
+.subtitle {
   text-align: center;
 }
-.deskImg{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
+.projectsContainer {
+  background: linear-gradient(180deg, #fff 50%, #7510f7 50%);
 }
 .section.is-primary {
-    background-color: #7510F7;
-    color: #fff;
+  background-color: #7510f7;
+  color: #fff;
 }
 h3 {
   color: #fff !important;
   font-weight: 400 !important;
 }
-.cardMiniHeader{
-  color: #7510F7 !important;
+.cardMiniHeader {
+  color: #7510f7 !important;
   margin-top: 80px;
 }
-p{
-   font-family: Georgia, 'Times New Roman', Times, serif;
+.skills {
+  background: linear-gradient(180deg, #7510f7 50%, #ffffff 50%);
 }
-.skills{
-  background: linear-gradient(180deg, #7510F7 50%, #ffffff 50%);
+
+
+
+.col-sm-auto{
+    padding-top: 20px;
+    margin: auto;
 }
-.container{
-  margin-bottom: 0px;
-}
-.skill{
-  margin-left: 25%;
-  margin-right: 25%;
-}
+
+
 .box {
-    border-radius: 12px;
-    box-shadow:0 .5em 1em -.125em rgba(10,10,10,.1),0 0 0 1px rgba(10,10,10,.02)
+  margin: auto;
+  width: 80%;
+  border-radius: 12px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0 0 1px rgba(10, 10, 10, 0.02);
 }
-.columns{
+.columns {
   display: flex;
   flex-direction: row;
   margin-bottom: 30px !important;
 }
-.column{
+.column {
   padding-left: 80px;
   padding-right: 80px;
 }
-.left{
-  border-right: 1px solid #E6ECF8;
+.left {
+  border-right: 1px solid #e6ecf8;
 }
 
-.skillogo{
+.skillogo {
   height: 55px;
   width: 55px;
   margin: 25px;
 }
 
-@media screen and (max-width: 1500px){
-.skill{
-  margin-left: 20%;
-  margin-right: 20%;
-}
-}
-
-@media screen and (max-width: 1200px){
-.skill{
-  margin-left: 15%;
-  margin-right: 15%;
-}
+@media screen and (max-width: 1200px) {
+  .box {
+    width: 90%;
+  }
 }
 
-@media screen and (max-width: 880px){
-.columns{
+@media screen and (max-width: 880px) {
+  .columns {
     flex-direction: column;
-}
-.column{
-  padding-left: 40px;
-  padding-right: 40px;
-}
-.left{
-  border-bottom: 1px solid #E6ECF8;
-  border-right: none;
-}
-.skill{
-  margin-left: 15%;
-  margin-right: 15%;
-}
+  }
+  .column {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .left {
+    border-bottom: 1px solid #e6ecf8;
+    border-right: none;
+  }
+  .skill {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
 }

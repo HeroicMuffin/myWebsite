@@ -1,35 +1,32 @@
 import React from "react";
-import deskImg from "../../Images/hero.svg"
+import ProjectCard from "../projectCard/index";
 import frontend from "../../Images/icons8-html-64.png"
 import backend from "../../Images/backend.png"
-import linkedin from "../../Images/linkedin.png"
-import linkedinHover from "../../Images/linkedin-hover.png"
-import github from "../../Images/github-logo.png"
-import githubHover from "../../Images/github-logo-hover.png"
 import "./index.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import {Assets} from "./projectsAssets"
 
 
-function Home() {
+class Home extends React.Component {
+    render(){
     return (
         <div class="Home">
             <div className="titleBox">
-                <h1 className="title is-spaced is-size-2-desktop is-size-3-tablet is-size-4-mobile">Designer & Fullstack Developer</h1>
+                <h1 className="title is-spaced is-size-2-desktop is-size-3-tablet is-size-4-mobile">Fullstack Developer</h1>
                 <h2 className="subtitle is-spaced is-size-4-desktop is-size-5-tablet is-size-6-mobile">I design and code beautifully simple things and I strive for excellence.</h2>
             </div>
-            <div className="deskImg">
-                <img src={deskImg}/>
-            </div>
-            <section className="section is-small is-primary has-text-centered is-long">
-                <div className="container">
-                    <div className="columns is-centered">
-                        <div className="desContainer">
-                            <h3 className="title is-spaced is-size-4-desktop is-size-5-mobile">Hi, I'm Peleg. Nice to meet you</h3>
-                            <p className="selfdesc">I'm a John bryce graduate but consider myself mostly self taught. I have created countless personal </p>
-                            <p className="selfdesc">projects by using both front and back end technologies some of which can be accessed through my git page.</p>
-                            <p className="selfdesc">  I'm looking forward to applying my knowledge for the benefit of others</p>
-                        </div>
+
+            <section className="section projectsContainer is-small is-primary has-text-centered is-long">
+                
+                <div className="container-fluid d-flex justify-content-center">
+                    <div className="row">
+                        {Assets.map((item,index) => {
+                        return <div className="col-sm-auto"><ProjectCard key={index} data={item}/></div>
+                    })}
                     </div>
                 </div>
+            
             </section>
             <section className="section skills has-text-centered">
                 <div className="container skill">
@@ -69,7 +66,20 @@ function Home() {
         </div>
     );
 }
-
+}
 
 
 export default Home;
+            // <div className="deskImg">
+            //     <img src={deskImg}/>
+            // </div>
+            // <div className="container">
+            //         <div className="columns is-centered">
+            //             <div className="desContainer">
+            //                 <h3 className="title is-spaced is-size-4-desktop is-size-5-mobile">Hi, I'm Peleg. Nice to meet you</h3>
+            //                 <p className="selfdesc">I'm a John bryce graduate but consider myself mostly self taught. I have created countless personal </p>
+            //                 <p className="selfdesc">projects by using both front and back end technologies some of which can be accessed through my git page.</p>
+            //                 <p className="selfdesc">  I'm looking forward to applying my knowledge for the benefit of others</p>
+            //             </div>
+            //         </div>
+            //     </div>

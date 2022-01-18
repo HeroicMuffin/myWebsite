@@ -1,28 +1,36 @@
 
-import React from "react"
+import React, {useState} from "react"
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Navbar from './Components/Navbar';
 import './App.css';
 import Home from "./Components/Home";
-import Projects from "./Components/Projects";
-import Contact from "./Components/Contact";
 import Footer from "./Components/Footer"
+import {Modal} from './Components/DemoModal'
+import TempGif from './Images/Crypto.gif'
+
+
+export const store = { show: true};
+export const store2 = { gifPath:""};
+
 
 
 
 function App() {
+  const [showModal, setShowModal] = useState(store.show)
+//   const openModal = () =>{
+//     setShowModal(prev => !prev)
+// }
   return (
     <Router>
     <div>
-      
+      {showModal?<Modal className="modalBG"  showModal={showModal} setShowModal={setShowModal} gif={TempGif}/>:null}
         <Navbar/>
         <Switch>
         <Route path="/" exact component={Home}/>
-        <Route path="/projects"  component={Projects}/>
-        <Route path="/contact"  component={Contact}/>
         </Switch>
         <Footer/>
     </div>
+
     </Router>
   );
 }

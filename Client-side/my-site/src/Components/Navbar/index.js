@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.css";
 import logo from "../../Images/sig.png"
+import Pdf from "../../Images/Peleg_ohanuna_CV.pdf"
 import {BrowserRouter as Router, Switch, Route,Link} from 'react-router-dom'
 
 
@@ -17,17 +18,9 @@ function Navbar() {
             </div>
             <div className="navItems">
                 <div className="navItem1">
-                    <Link to={"/projects"}>
-                        <a class="button is-primary is-outlined is-rounded">Projects</a>
-                    </Link>
+                    <a class="btn btn-outline-primary" href = {Pdf} target = "_blank">Resume</a>
                 </div>
-            
 
-                <div className="navItem2">
-                    <Link to={"/contact"}>
-                        <a class="button is-primary is-outlined is-rounded">Say Hello</a>
-                    </Link>
-                </div>
             </div>
         </div>
     </div>
