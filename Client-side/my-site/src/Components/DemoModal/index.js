@@ -1,10 +1,7 @@
 import React, { useRef, useEffect, useCallback } from 'react';
 import { useSpring, animated } from 'react-spring';
+import ReactDom from "react-dom"
 import "./index"
-import styled from 'styled-components';
-
-
-
 
 
 export const Modal = ({ showModal, setShowModal,gif }) => {
@@ -42,15 +39,16 @@ export const Modal = ({ showModal, setShowModal,gif }) => {
     [keyPress]
   );
 
-  return (
+  return ReactDom.createPortal(
     <>
       {showModal ? (
         <div className="gifModal" onClick={closeModal} ref={modalRef}>
           <animated.div style={animation}>
-              <img src={gif} alt='camera' />
+              <img className="modalImg" src={gif} alt='camera' />
           </animated.div>
         </div>
       ) : null}
-    </>
+    </>, document.getElementById("modal")
+    
   );
 };

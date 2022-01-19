@@ -6,7 +6,7 @@
   background-color: #fff;
 }
 .titleBox {
-  margin-top: 5%;
+  margin-top: 3%;
 }
 .title {
   font-weight: 800;
@@ -29,7 +29,7 @@ h3 {
 }
 .cardMiniHeader {
   color: #7510f7 !important;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 .skills {
   background: linear-gradient(180deg, #7510f7 50%, #ffffff 50%);
@@ -56,8 +56,8 @@ h3 {
   margin-bottom: 30px !important;
 }
 .column {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .left {
   border-right: 1px solid #e6ecf8;

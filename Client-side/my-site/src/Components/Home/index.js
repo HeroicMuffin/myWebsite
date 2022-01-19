@@ -3,8 +3,6 @@ import ProjectCard from "../projectCard/index";
 import frontend from "../../Images/icons8-html-64.png"
 import backend from "../../Images/backend.png"
 import "./index.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import {Assets} from "./projectsAssets"
 
 

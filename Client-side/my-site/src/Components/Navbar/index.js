@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import logo from "../../Images/sig.png"
 import Pdf from "../../Images/Peleg_ohanuna_CV.pdf"
-import {BrowserRouter as Router, Switch, Route,Link} from 'react-router-dom'
+import {BrowserRouter as Router,Link} from 'react-router-dom'
 
 
 function Navbar() {

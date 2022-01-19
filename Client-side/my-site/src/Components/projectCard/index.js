@@ -1,17 +1,15 @@
 import React, {useState} from "react";
-import useChange from 'use-change';
+import { Modal } from "../DemoModal";
 import "./index.css";
-import {store} from '../../App'
+
 
 function ProjectCard(props) {
 
-const [show, setShow] = useChange(store, 'show');
+
 
 const [showModal, setShowModal] = useState(false)
 const openModal = () =>{
     setShowModal(prev => !prev)
-    setShow(!show)
-    console.log(store.show)
 }
 
 
@@ -26,6 +24,7 @@ const openModal = () =>{
                <h4 className="card-title">{title}</h4>
                <p className="card-text text-secondary">{description}</p>
                <button className="btn btn-outline-success" onClick={openModal}>Demo</button>
+               <Modal className="modalBG"  showModal={showModal} setShowModal={setShowModal} gif={gif}/>
            </div>
        </div>
     );
