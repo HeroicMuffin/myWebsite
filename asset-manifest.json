@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/myWebsite/static/css/main.e8f6c9e8.chunk.css",
-    "main.js": "/myWebsite/static/js/main.1002c3d1.chunk.js",
-    "main.js.map": "/myWebsite/static/js/main.1002c3d1.chunk.js.map",
+    "main.js": "/myWebsite/static/js/main.b3a4a150.chunk.js",
+    "main.js.map": "/myWebsite/static/js/main.b3a4a150.chunk.js.map",
     "runtime-main.js": "/myWebsite/static/js/runtime-main.a80026b5.js",
     "runtime-main.js.map": "/myWebsite/static/js/runtime-main.a80026b5.js.map",
     "static/css/2.383c0125.chunk.css": "/myWebsite/static/css/2.383c0125.chunk.css",
-    "static/js/2.9422aea6.chunk.js": "/myWebsite/static/js/2.9422aea6.chunk.js",
-    "static/js/2.9422aea6.chunk.js.map": "/myWebsite/static/js/2.9422aea6.chunk.js.map",
+    "static/js/2.0f1fb7e2.chunk.js": "/myWebsite/static/js/2.0f1fb7e2.chunk.js",
+    "static/js/2.0f1fb7e2.chunk.js.map": "/myWebsite/static/js/2.0f1fb7e2.chunk.js.map",
     "index.html": "/myWebsite/index.html",
     "static/css/2.383c0125.chunk.css.map": "/myWebsite/static/css/2.383c0125.chunk.css.map",
     "static/css/main.e8f6c9e8.chunk.css.map": "/myWebsite/static/css/main.e8f6c9e8.chunk.css.map",
-    "static/js/2.9422aea6.chunk.js.LICENSE.txt": "/myWebsite/static/js/2.9422aea6.chunk.js.LICENSE.txt",
+    "static/js/2.0f1fb7e2.chunk.js.LICENSE.txt": "/myWebsite/static/js/2.0f1fb7e2.chunk.js.LICENSE.txt",
     "static/media/Crypto.d925cd87.gif": "/myWebsite/static/media/Crypto.d925cd87.gif",
     "static/media/Peleg_ohanuna_CV.646b5b29.pdf": "/myWebsite/static/media/Peleg_ohanuna_CV.646b5b29.pdf",
     "static/media/Shop.0de8d3e6.gif": "/myWebsite/static/media/Shop.0de8d3e6.gif",
@@ -25,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.a80026b5.js",
     "static/css/2.383c0125.chunk.css",
-    "static/js/2.9422aea6.chunk.js",
+    "static/js/2.0f1fb7e2.chunk.js",
     "static/css/main.e8f6c9e8.chunk.css",
-    "static/js/main.1002c3d1.chunk.js"
+    "static/js/main.b3a4a150.chunk.js"
   ]
 }
