@@ -6,9 +6,6 @@ import './App.css';
 import Home from "./Components/Home";
 import Footer from "./Components/Footer"
 
-
-
-
 function App() {
 
   return (
@@ -17,6 +14,7 @@ function App() {
         <Navbar/>
         <Switch>
         <Route path="/" exact component={Home}/>
+        <Route path="/myWebsite" exact component={Home}/>
         </Switch>
         <Footer/>
     </div>

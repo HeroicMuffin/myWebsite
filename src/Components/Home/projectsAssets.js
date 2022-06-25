@@ -1,9 +1,9 @@
-import cryptoIMG from "../../Images/cryptoIMG.PNG"
-import vacationIMG from "../../Images/vacationIMG.PNG"
-import shopIMG from "../../Images/shopIMG.PNG"
-import vacationGif from "../../Images/Vacation.gif"
-import shopGif from "../../Images/Shop.gif"
-import cryptoGif from "../../Images/Crypto.gif"
+import cryptoIMG from "../../assets/cryptoIMG.PNG"
+import vacationIMG from "../../assets/vacationIMG.PNG"
+import shopIMG from "../../assets/shopIMG.PNG"
+import vacationGif from "../../assets/Vacation.gif"
+import shopGif from "../../assets/Shop.gif"
+import cryptoGif from "../../assets/Crypto.gif"
 
 export const Assets = [
     {

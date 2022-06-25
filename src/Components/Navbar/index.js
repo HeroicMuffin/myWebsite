@@ -1,8 +1,8 @@
 import React from "react";
 import "./index.css";
-import logo from "../../Images/sig.png"
-import Pdf from "../../Images/Peleg_ohanuna_CV.pdf"
-import {BrowserRouter as Router,Link} from 'react-router-dom'
+import logo from "../../assets/sig.png"
+import Pdf from "../../assets/Peleg_ohanuna_CV.pdf"
+import {Link} from 'react-router-dom'
 
 
 function Navbar() {
@@ -18,7 +18,7 @@ function Navbar() {
             </div>
             <div className="navItems">
                 <div className="navItem1">
-                    <a class="btn btn-outline-primary" href = {Pdf} target = "_blank">Resume</a>
+                    <a className="btn btn-outline-primary" href = {Pdf} target = "_blank" rel="noreferrer">Resume</a>
                 </div>
 
             </div>

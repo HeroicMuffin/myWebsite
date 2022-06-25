@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "../projectCard/index";
-import frontend from "../../Images/icons8-html-64.png"
-import backend from "../../Images/backend.png"
+import frontend from "../../assets/icons8-html-64.png"
+import backend from "../../assets/backend.png"
 import "./index.css";
 import {Assets} from "./projectsAssets"
 
@@ -9,7 +9,7 @@ import {Assets} from "./projectsAssets"
 class Home extends React.Component {
     render(){
     return (
-        <div class="Home">
+        <div className="Home">
             <div className="titleBox">
                 <h1 className="title is-spaced is-size-2-desktop is-size-3-tablet is-size-4-mobile">Fullstack Developer</h1>
                 <h2 className="subtitle is-spaced is-size-4-desktop is-size-5-tablet is-size-6-mobile">I design and code beautifully simple things and I strive for excellence.</h2>
@@ -20,7 +20,7 @@ class Home extends React.Component {
                 <div className="container-fluid d-flex justify-content-center">
                     <div className="row">
                         {Assets.map((item,index) => {
-                        return <div className="col-sm-auto"><ProjectCard key={index} data={item}/></div>
+                        return <div className="col-sm-auto"><ProjectCard key={`${JSON.stringify(item)}_${index}`} data={item} /></div>
                     })}
                     </div>
                 </div>
@@ -32,7 +32,7 @@ class Home extends React.Component {
                         <div className="content">
                             <div className="columns  is-centered">
                                 <div className="column left">
-                                    <img className="skillogo" src={frontend}/>
+                                    <img className="skillogo" src={frontend} alt=""/>
                                     <h1 className="title is-spaced is-size-4">Front-end</h1>
                                     <p>I enjoy working with frameworks and bringing ideas to life on a browser </p>
                                     <h4 className="cardMiniHeader">Languages & Frameworks:</h4>
@@ -44,7 +44,7 @@ class Home extends React.Component {
                                     <p>CSS</p>
                                 </div>
                                 <div className="column">
-                                    <img className="skillogo" src={backend}/>
+                                    <img className="skillogo" src={backend} alt=""/>
                                     <h1 className="title is-spaced is-size-4">Back-end</h1>
                                     <p>I like to write code from scratch and solve problems in creative ways</p>
                                     <h4 className="cardMiniHeader">Dev tools:</h4>
